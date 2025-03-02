@@ -14,7 +14,7 @@ The easiest way to use this app would be to host it on your NAS using Docker
 To install with Docker using the new container manager app, use the following steps:
 
 1. Search for, and download the the image from the Docker registry. Select the latest tag
-   ![Download the image from the docker registry](./images/step1.jpeg)
+   ![Download the image from the docker registry](./images/step1.jpg)
 2. Go to the image and click run
 3. Change the container name if you prefer, and click next
 4. In the `Port Settings` section, click Add and set the `Local Port` (the first textfield input) to whatever you want: it's the port you will use to access the web view of 'memories'; Then set the `Container Port` (the second textfield input) to `8080`
