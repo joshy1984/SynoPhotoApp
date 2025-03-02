@@ -1,4 +1,4 @@
-# Synology Photos Memories
+# SynoPhotoApp
 
 This is a Node JS/Docker app that fills the void for synology photos lacking a memory feature similar to Google Photos. The simple solution that I've found is to use the [unofficial api](https://github.com/zeichensatz/SynologyPhotosAPI) to fetch the photos in a given timeframe, and send an email with working web links to those photos. Furthermore, NodeJS serves a web page where these photos can be accessed.
 
@@ -78,11 +78,31 @@ The password for your send email (may require 'app password' for gmail). If you 
 
 #### RECEIVE_EMAIL:
 
-The email address you want the memory emails delivered to. This can be any email address/service.
+The email address you want the memory emails delivered to. This can be any email address/service, can contain more than one email addresses separated with semicolons (;).
 
 #### EMAIL_SUBJECT:
 
 This can be anything you want.
+
+#### TZ:
+
+TimeZone data, for example: Europe/Budapest
+
+#### EMAIL_SCHEDULE:
+
+Email sending time. For example 06:00
+
+#### NAS_PROTOCOL:
+
+Currently not in use.
+
+#### NAS_PORT:
+
+Currently not in use.
+
+#### WEB_PORT:
+
+Currently not in use.
 
 #### PORT:
 
