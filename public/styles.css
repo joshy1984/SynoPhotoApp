@@ -1,0 +1,100 @@
+/* public/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;  /* fekete h tt r */
+  color: #fff;             /* feh r sz veg */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;  /* balra igaz t s */
+}
+
+.header h1 {
+  text-align: center;  /* balra igaz tott c msor */
+  margin: 0 0 10px 0;
+  padding-bottom: 10px;
+}
+
+.date-picker {
+  text-align: left;  /* balra igaz tott d tumv laszt  */
+  margin-bottom: 20px;
+}
+
+#photos-container {
+  margin-top: 20px;
+}
+
+/*  v szerinti csoportos t s */
+.group-container {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #555;  /* vil gosabb vonal a fekete h tt rhez */
+}
+
+.group-container h2 {
+  margin-bottom: 1rem;
+}
+
+/* R csos elrendez s a k peknek */
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.photos-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;      /* Minden k p n gyzetes */
+  object-fit: cover;        /* Kit lti a n gyzetet, lev gja a t lcsordul  r szeket */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Lightbox st lusok */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.lightbox button {
+  position: absolute;
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+#lightbox-close {
+  top: 10px;
+  right: 10px;
+}
+
+#lightbox-prev {
+  top: 50%;
+  left: -40px;
+}
+
+#lightbox-next {
+  top: 50%;
+  right: -40px;
+}
